@@ -130,7 +130,7 @@
 
         <div class="mb-3">
             <label for="observacoes">Observações</label>
-            <textarea class="form-control" id="observacoes" name="observacoes" rows="3" th:text="${observacoes}"></textarea>
+            <textarea class="form-control" id="observacoes" name="observacoes" rows="3" maxlength="200" th:text="${observacoes}"></textarea>
         </div>
 
         <div th:if="${editandoId == null}" class="row align-items-center mb-3">
