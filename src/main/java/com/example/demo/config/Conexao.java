@@ -8,9 +8,12 @@ public class Conexao {
 
     public Connection conectar() {
         Connection conn = null;
+        String url = "jdbc:postgresql://dpg-crgru4qj1k6c73do1gf0-a.oregon-postgres.render.com:5432/cadvacinas_gypf_rcrs";
+        String username = "cad_vacinas_senac_user";
+        String password = "tSHiCc1QVHCwsd93zbGRNOSCbe9NoEA9";
         try {
             Class.forName("org.postgresql.Driver");
-            conn = DriverManager.getConnection("jdbc:postgresql://dpg-crgru4qj1k6c73do1gf0-a.oregon-postgres.render.com/cadvacinas_gypf_rcrs", "cad_vacinas_senac_user", "tSHiCc1QVHCwsd93zbGRNOSCbe9NoEA9");
+            conn = DriverManager.getConnection(url, username, password);
         } catch (SQLException ex) {
             System.out.println("Erro: Não conseguiu conectar no BD.");
         } catch (ClassNotFoundException ex) {
