@@ -10,7 +10,7 @@ public class Conexao {
         Connection conn = null;
         try {
             Class.forName("org.postgresql.Driver");
-            conn = DriverManager.getConnection("jdbc:postgresql://dpg-crgru4qj1k6c73do1gf0-a", "cad_vacinas_senac_user", "tSHiCc1QVHCwsd93zbGRNOSCbe9NoEA9");
+            conn = DriverManager.getConnection("jdbc:postgresql://dpg-crgru4qj1k6c73do1gf0-a.oregon-postgres.render.com/cadvacinas_gypf_rcrs", "cad_vacinas_senac_user", "tSHiCc1QVHCwsd93zbGRNOSCbe9NoEA9");
         } catch (SQLException ex) {
             System.out.println("Erro: Não conseguiu conectar no BD.");
         } catch (ClassNotFoundException ex) {
